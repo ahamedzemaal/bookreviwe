@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📚 eduspace</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="heading"><h1>eduspace.lk</h1></div>
+
+    <div class="container">
+      <div class="book-container">
+        <h2>Rich Dad Poor Dad</h2>
+        <h5>Robert</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+          alias? Laborum excepturi sed labore beatae dolor, alias, modi aliquam
+          ratione, quos commodi voluptate corrupti nisi deserunt! Ut quaerat
+          excepturi ipsam!
+        </p>
+        <button onclick="dltBook(event)">Delete</button>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="popupbox">
+      <form action="">
+        <h2>Add a Book</h2>
+        <input type="text" placeholder="Book Name" id="bookname" />
+        <input type="text" placeholder="Author" id="authname" />
+        <textarea name="desc" id="desc" placeholder="Description" maxlength="35"></textarea>
+        <div class="btns">
+          <button id="addBook">Add</button>
+          <button onclick="closepopup()" id="close">Close</button>
+        </div>
+      </form>
+    </div>
+
+    <button class="add-btn" id="addPopbtn" onclick="show()">+</button>
+  </body>
+
+  <script src="script.js"></script>
+</html>
